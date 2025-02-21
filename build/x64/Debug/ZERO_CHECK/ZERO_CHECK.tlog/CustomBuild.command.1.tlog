@@ -1,0 +1,10 @@
+^C:\MISIS2025G-24-03-BABIKHIN-I-A\BUILD\CMAKEFILES\D4A78D2C86A40CDD97DB7D1884DCAE42\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/misis2025g-24-03-babikhin-i-a -BC:/misis2025g-24-03-babikhin-i-a/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/misis2025g-24-03-babikhin-i-a/build/Project.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
